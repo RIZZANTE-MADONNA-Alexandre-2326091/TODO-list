@@ -1,4 +1,4 @@
-const Filtrer = () => {
+const Filtrer = ({taches = [], typeFiltrage}) => {
 
 };
 

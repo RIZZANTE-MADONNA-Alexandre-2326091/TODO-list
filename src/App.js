@@ -6,9 +6,12 @@ import {useState} from "react";
 import todo from "./todo.json";
 
 const App = () => {
+    if (!window.confirm("Voulez vous charger les tâches déjà présentes?")) {
+        todo = [];
+    }
+    const [currentTodo, setCurrentTodo] = useState(todo);
     console.log(todo);
 
-    const [currentTodo, setCurrentTodo] = useState(todo);
 
     const ajoutTache = () => {
         const todo = {
@@ -24,7 +27,6 @@ const App = () => {
     return (
         <div className="App">
             <Header taches={taches} />
-            {JSON.stringify(taches)}
             <Liste taches={taches} />
             <button onClick={ajoutTache}>Ajout Test</button>
             <Footer />

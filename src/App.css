@@ -14,7 +14,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
-        animation: App-logo-spin infinite 1s linear;
+        animation: App-logo-spin infinite 0.01s linear;
     }
     .App-logo-reverse {
         animation: App-logo-spin-reverse infinite 1s linear;
@@ -41,6 +41,16 @@
 .addButton {
     padding: 1em;
     font-size: 6em;
+}
+
+.listElement {
+    margin: 1em;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 600px) {
