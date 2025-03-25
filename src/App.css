@@ -43,7 +43,7 @@
     font-size: 6em;
 }
 
-.listElement {
+.listTache {
     margin: 1em;
     border-style: solid;
     border-color: black;
@@ -51,6 +51,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.listTacheTerminee {
+    margin: 1em;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-decoration: line-through;
 }
 
 @media only screen and (max-width: 600px) {
