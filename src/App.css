@@ -14,7 +14,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
-        animation: App-logo-spin infinite 0.01s linear;
+        animation: App-logo-spin infinite 1s linear;
     }
     .App-logo-reverse {
         animation: App-logo-spin-reverse infinite 1s linear;
@@ -51,17 +51,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-.listTacheTerminee {
-    margin: 1em;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-decoration: line-through;
 }
 
 @media only screen and (max-width: 600px) {

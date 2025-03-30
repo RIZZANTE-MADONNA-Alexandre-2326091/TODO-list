@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import {useState} from "react";
 import AjoutTache from "./AjoutTache.js";
 import todo from "./todo.json";
+import Filtrer from "./Filtrer";
 
 function setCurrentTodo(newTodo) {
     {todo = newTodo;}
@@ -21,6 +22,7 @@ const App = () => {
     return (
         <div className="App">
             <Header taches={taches} />
+            <Filtrer/>
             <Liste taches={taches} />
             <button onClick={AjoutTache(currentTodo)}>Ajout Test</button>
             <Footer/>
